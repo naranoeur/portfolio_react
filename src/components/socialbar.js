@@ -27,13 +27,10 @@ function Socialbar () {
        <i className="fa fa-github fa-2x" aria-hidden="true" />
      </a>
        <a href="">
-         <i className="fa fa-skype fa-2x" aria-hidden="true"/>
+         <i className="fa fa-codepen fa-2x" aria-hidden="true"/>
        </a>
        <a href="">
          <i className="fa fa-linkedin-square  fa-2x" aria-hidden="true"/>
-       </a>
-       <a href="">
-         <i className="fa fa-envelope fa-2x" aria-hidden="true"/>
        </a>
    </div>
  </Style>

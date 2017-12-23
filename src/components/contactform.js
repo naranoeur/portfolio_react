@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const blue = "#69c1ff";
-const yellow = "#fff2b4";
+//const yellow = "#fff2b4";
 const lightGrey = "#5f7080";
 const darkGrey = "#485460";
 
@@ -57,12 +57,13 @@ const ContactFormStyle = styled.div`
   }
 
 
-  @media (max-width: 550px) {
+  @media (max-width: 600px) {
     .top-input {
       flex-direction: column;
     }
     .top-input input {
-      margin: 10px 0;
+      margin: 5px 0;
+      height: 37px;
       width: 100%;
       box-sizing: border-box;
     }
@@ -78,7 +79,7 @@ const ContactFormStyle = styled.div`
     border: 1px solid ${lightGrey};
     width: 100%;
     border-radius: 5px;
-    height: 120px;
+    height: 150px;
     padding: 15px;
     font-size: 16px;
     font-weight: 700;
@@ -93,20 +94,20 @@ const ContactFormStyle = styled.div`
   textarea:placeholder-shown {
     font-weight: 400;
   }
-textarea::-webkit-input-placeholder {
-color: ${lightGrey} !important;
-}
+  textarea::-webkit-input-placeholder {
+  color: ${lightGrey} !important;
+  }
 
-textarea:-moz-placeholder { /* Firefox 18- */
-color: ${lightGrey} !important;
-}
+  textarea:-moz-placeholder { /* Firefox 18- */
+  color: ${lightGrey} !important;
+  }
 
-textarea::-moz-placeholder {  /* Firefox 19+ */
-color: ${lightGrey} !important;
-}
+  textarea::-moz-placeholder {  /* Firefox 19+ */
+  color: ${lightGrey} !important;
+  }
 
-textarea:-ms-input-placeholder {
-color: ${lightGrey} !important;
+  textarea:-ms-input-placeholder {
+  color: ${lightGrey} !important;
 }
 
   .submit-wrap input {

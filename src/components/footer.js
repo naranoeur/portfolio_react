@@ -15,6 +15,12 @@ const Style = styled.div`
   p {
     margin: 32px 0;
   }
+  @media (max-width: 550px) {
+    padding: 60px 0;
+    p {
+      margin: 17px 0;
+    }
+  }
 `;
 
 function Footer () {

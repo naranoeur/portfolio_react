@@ -11,4 +11,19 @@ body {
 
 .container {
   padding: 0 8%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media (max-width: 550px) {
+  .container {
+    padding: 0 3%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .container {
+    width: 950px;
+    margin: 0 auto;
+  }
 }

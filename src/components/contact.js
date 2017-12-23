@@ -25,7 +25,7 @@ const Style = styled.div`
 function Contact () {
  return (
  <Style>
-   <div className="contact-container">
+   <div className="contact-container container">
      <h1>Let’s get in touch</h1>
      <p>I would love to hear about your project, so don’t hesitate to contact me
 or connect with me on social media.</p>

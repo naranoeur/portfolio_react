@@ -20,6 +20,12 @@ const Style = styled.div`
   .about-container {
     margin: 4% 20%;
   }
+  @media (max-width: 650px) {
+    padding: 60px 0;
+    .about-container {
+      margin: 4% 8%;
+    }
+  }
 `;
 
 function About () {

@@ -61,7 +61,7 @@ class Navbar extends React.Component {
   }
 
   handleScroll() {
-    const y = document.documentElement.scrollTop;
+    const y =  document.documentElement.scrollTop || document.body.scrollTop;
     if (this.state.top && y > 0) this.setState({top: false});
     else if (y === 0 && !this.state.top) this.setState({top: true});
   }
@@ -81,19 +81,5 @@ class Navbar extends React.Component {
   }
 }
 
-
-function Navbar () {
- return (
- <Style>
-   <div className="container nav-bar">
-     <div className="nav-menu">
-       <a href="">Home</a>
-       <a href="">Projects</a>
-       <a href="">Contact</a>
-     </div>
-   </div>
- </Style>
- );
-}
 
 export default Navbar;
