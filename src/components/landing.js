@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import landingImage from '../assets/landing.jpg';
 
 const Style = styled.div`
   background-color: #5f7080;
@@ -8,6 +9,9 @@ const Style = styled.div`
   display: flex;
   align-items: center;
   position: relative;
+  background-image: url(${landingImage});
+  background-size: cover;
+  background-position: center;
   h1 {
     font-size: 76px;
     font-weight: 900;
@@ -33,6 +37,7 @@ function Landing () {
      <h1>Web Developer</h1>
      <h3>Bringing fresh perspective into web development and wed design</h3>
    </div>
+   <div className="white-gradient"/>
  </Style>
  );
 }

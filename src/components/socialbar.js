@@ -23,13 +23,13 @@ function Socialbar () {
  return (
  <Style>
    <div className="social-menu">
-     <a href="">
+     <a href="https://github.com/naranoeur">
        <i className="fa fa-github fa-2x" aria-hidden="true" />
      </a>
-       <a href="">
+       <a href="https://codepen.io/naranoeur/">
          <i className="fa fa-codepen fa-2x" aria-hidden="true"/>
        </a>
-       <a href="">
+       <a href="https://www.linkedin.com/in/naranoeur/">
          <i className="fa fa-linkedin-square  fa-2x" aria-hidden="true"/>
        </a>
    </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Scrollchor from 'react-scrollchor';
 
 const Style = styled.div`
   z-index: 10;
@@ -7,21 +8,11 @@ const Style = styled.div`
   top: 0;
   left: 0;
   right: 0;
-  line-height: 45px;
   font-weight: 700;
-  .nav-bar {
-    background-color: white;
-    transition-timing-function: easeInQuad;
-    transition: all 0.5s;
-  }
-  .top {
-    background-color: transparent;
-    line-height: 65px;
-    a {
-      color: white;
-      padding: 20px 25px;
-    }
-  }
+  background-color: ${props => props.top ? 'transparent' : 'white'};
+  line-height: ${props => props.top ? '65px' : '45px'};
+  transition-timing-function: easeInQuad;
+  transition: all 0.5s;
   .logo {
     color: white;
     font-size: 20px;
@@ -29,9 +20,9 @@ const Style = styled.div`
     font-style: italic;
   }
   a {
-    color: #485460;
+    color:${props => props.top ? 'white' : '#485460'};
     text-decoration: none;
-    padding: 10px 25px;
+    padding: ${props => props.top ? '20px' : '10px'} 25px;
     letter-spacing: 3px;
     font-size: 14px;
     &:hover {
@@ -42,6 +33,9 @@ const Style = styled.div`
     display: flex;
     justify-content: flex-end;
     align-items: center;
+  }
+  @media (max-width: 500px) {
+    line-height: ${props => props.top ? '55px' : '35px'};
   }
 `;
 
@@ -68,14 +62,16 @@ class Navbar extends React.Component {
 
   render() {
     return (
-      <Style>
-        <div className={this.state.top ? 'container nav-bar top' : 'container nav-bar'}>
-          <div className='nav-menu'>
-            <a href="">Home</a>
-            <a href="">Projects</a>
-            <a href="">Contact</a>
+      <Style top={this.state.top}>
+          <div className="container">
+            <div className="nav-bar">
+              <div className='nav-menu'>
+                <Scrollchor to="" animate={{duration: 0}}>Home</Scrollchor>
+                <Scrollchor to="#projects" animate={{duration: 0}}>Projects</Scrollchor>
+                <Scrollchor to="#contact" animate={{duration: 0}}>Contact</Scrollchor>
+              </div>
+            </div>
           </div>
-        </div>
       </Style>
     );
   }
