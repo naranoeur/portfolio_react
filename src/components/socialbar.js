@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const blue = "#69c1ff";
+
 const Style = styled.div`
   color: #485460;
   text-align: center;
@@ -11,11 +13,12 @@ const Style = styled.div`
     margin: 0 10px;
     color: white;
   }
-  span {
-    display: block;
-    border-bottom: 1px dotted #485460;
-    width: 30%;
-    margin: 0 20px;
+  i {
+    transition-duration: 0.3s;
+    transition-timing-function: EaseInOutCubic;
+    &:hover {
+      color: ${blue};
+    }
   }
 `;
 

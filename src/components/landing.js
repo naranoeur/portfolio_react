@@ -4,6 +4,7 @@ import landingImage from '../assets/landing.jpg';
 
 const Style = styled.div`
   background-color: #5f7080;
+  background-attachment: fixed;
   height: 100vh;
   color: white;
   display: flex;

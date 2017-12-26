@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Socialbar from './socialbar'
 
+
 const Style = styled.div`
   background-color: #5f7080;
   color: white;
