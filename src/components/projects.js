@@ -9,7 +9,7 @@ import img5 from "../assets/iphone.jpg";
 import img6 from "../assets/md.png";
 
 const infoArr = [
-  {image: img1, url: "https://shielded-forest-52611.herokuapp.com/index.html"},
+  {image: img1, url: "https://aqueous-shore-43869.herokuapp.com/index.html"},
   {image: img2, url: "https://codepen.io/naranoeur/pen/mMZOxB"},
   {image: img3, url: "https://codepen.io/naranoeur/pen/QvYEMJ"},
   {image: img4, url: "https://codepen.io/naranoeur/pen/RKdOoE"},
