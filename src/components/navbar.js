@@ -35,7 +35,7 @@ const Style = styled.div`
     align-items: center;
   }
   @media (max-width: 500px) {
-    line-height: ${props => props.top ? '40px' : '20px'};
+    line-height: ${props => props.top ? '40px' : '30px'};
     a {
       font-size: 12px;
       letter-spacing: 1px;

@@ -27,6 +27,7 @@ const Style = styled.div`
     }
   }
   @media (max-width: 500px) {
+    padding: 55px 0;
     font-size: 18px;
     font-weight: 400;
   }
