@@ -38,14 +38,26 @@ const Style = styled.div`
     line-height: ${props => props.top ? '40px' : '30px'};
     a {
       font-size: 12px;
-      letter-spacing: 1px;
-      padding: ${props => props.top ? '9px' : '5px'} 10px;
+      padding: ${props => props.top ? '9px' : '7px'} 10px;
       &:hover {
         border-bottom: 1px solid #afdeff;
       }
     }
   }
 `;
+
+/*
+
+line-height: ${props => props.top ? '40px' : '30px'};
+a {
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding: ${props => props.top ? '9px' : '5px'} 10px;
+  &:hover {
+    border-bottom: 1px solid #afdeff;
+  }
+}
+*/
 
 class Navbar extends React.Component {
   constructor (props) {
