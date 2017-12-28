@@ -35,8 +35,9 @@ const Style = styled.div`
     align-items: center;
   }
   @media (max-width: 500px) {
-    line-height: ${props => props.top ? '40px' : '30px'};
+    line-height: ${props => props.top ? '40px' : '25px'};
     a {
+      letter-spacing: 1px;
       font-size: 10px;
       padding: ${props => props.top ? '9px' : '7px'} 10px;
       &:hover {
