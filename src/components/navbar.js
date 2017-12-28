@@ -39,7 +39,7 @@ const Style = styled.div`
     a {
       font-size: 12px;
       letter-spacing: 1px;
-      padding: ${props => props.top ? '9px' : '5px'} 25px;
+      padding: ${props => props.top ? '9px' : '5px'} 10px;
       &:hover {
         border-bottom: 1px solid #afdeff;
       }
