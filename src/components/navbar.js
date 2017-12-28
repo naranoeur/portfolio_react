@@ -36,14 +36,16 @@ const Style = styled.div`
   }
   @media (max-width: 500px) {
     position: static;
-    line-height: ${props => props.top ? '40px' : '25px'};
+    line-height: 40px;
+    background-color: transparent;
+    .nav-bar {
+      justify-content: center;
+    }
     a {
       letter-spacing: 1px;
-      font-size: 11px;
-      padding: ${props => props.top ? '9px' : '7px'} 10px;
-      &:hover {
-        border-bottom: 1px solid #afdeff;
-      }
+      font-size: 12px;
+      color: #485460;
+      padding: 9px 10px;
     }
   }
 `;
