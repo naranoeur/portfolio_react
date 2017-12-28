@@ -35,10 +35,11 @@ const Style = styled.div`
     align-items: center;
   }
   @media (max-width: 500px) {
+    position: static;
     line-height: ${props => props.top ? '40px' : '25px'};
     a {
       letter-spacing: 1px;
-      font-size: 10px;
+      font-size: 11px;
       padding: ${props => props.top ? '9px' : '7px'} 10px;
       &:hover {
         border-bottom: 1px solid #afdeff;
