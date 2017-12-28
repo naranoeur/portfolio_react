@@ -35,7 +35,8 @@ const Style = styled.div`
     }
     h3 {
       letter-spacing: 1px;
-      font-size: 14px;
+      font-weight: 400px;
+      font-size: 16px;
     }
   }
 `;

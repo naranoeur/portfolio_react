@@ -27,6 +27,7 @@ const Style = styled.div`
     }
     p {
       font-size: 17px;
+      font-weight: 400;
     }
   }
 `;

@@ -26,6 +26,10 @@ const Style = styled.div`
       margin: 4% 8%;
     }
   }
+  @media (max-width: 500px) {
+    font-size: 18px;
+    font-weight: 400;
+  }
 `;
 
 function About () {

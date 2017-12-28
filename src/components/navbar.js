@@ -37,9 +37,9 @@ const Style = styled.div`
   @media (max-width: 500px) {
     line-height: ${props => props.top ? '40px' : '20px'};
     a {
-      font-size: 10px;
+      font-size: 12px;
       letter-spacing: 1px;
-      padding: ${props => props.top ? '8px' : '4px'} 25px;
+      padding: ${props => props.top ? '9px' : '5px'} 25px;
       &:hover {
         border-bottom: 1px solid #afdeff;
       }
