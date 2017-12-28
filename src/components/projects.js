@@ -37,9 +37,8 @@ const Project= styled.div`
     width: 46%;
     padding-top: 43%;
   }
-  @media (max-width: 450px) {
-    width: 90%;
-    padding-top: 82%;
+  @media (max-width: 500px) {
+    margin: 30px 0;
   }
 `;
 
@@ -63,15 +62,19 @@ const Style = styled.div`
     justify-content: space-between;
   }
   a {
+    box-sizing: padding-box;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
   }
-  @media (max-width: 450px) {
-    .projects {
-      justify-content: center;
+  @media (max-width: 500px) {
+    padding: 40px 0;
+    h1 {
+      font-size: 30px;
+      letter-spacing: 2px;
+      margin-bottom: 35px;
     }
   }
 `;

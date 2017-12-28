@@ -20,6 +20,15 @@ const Style = styled.div`
     margin: 4% auto;
     max-width: 650px;
   }
+  @media (max-width: 500px) {
+    padding: 50px 0;
+    h1 {
+      font-size: 22px;
+    }
+    p {
+      font-size: 17px;
+    }
+  }
 `;
 
 function Contact () {

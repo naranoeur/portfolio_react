@@ -35,7 +35,15 @@ const Style = styled.div`
     align-items: center;
   }
   @media (max-width: 500px) {
-    line-height: ${props => props.top ? '55px' : '35px'};
+    line-height: ${props => props.top ? '40px' : '20px'};
+    a {
+      font-size: 10px;
+      letter-spacing: 1px;
+      padding: ${props => props.top ? '8px' : '4px'} 25px;
+      &:hover {
+        border-bottom: 1px solid #afdeff;
+      }
+    }
   }
 `;
 

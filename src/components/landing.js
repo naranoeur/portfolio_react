@@ -29,6 +29,15 @@ const Style = styled.div`
     top: -4vh;
     left: 5px;
   }
+  @media (max-width: 500px) {
+    h1 {
+      font-size: 55px;
+    }
+    h3 {
+      letter-spacing: 1px;
+      font-size: 14px;
+    }
+  }
 `;
 
 function Landing () {
