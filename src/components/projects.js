@@ -20,15 +20,21 @@ const Project= styled.div`
   background-color: #5f7080;
   margin: 40px 0;
   width: 30%;
-  padding-top: 28%;
   border-radius: 5%;
-  background-image: url(${props => props.image});
-  background-size: cover;
   box-shadow: 0 10px 30px 2px #8894a0;
   transition-duration: 0.3s;
   transition-timing-function: EaseInOutCubic;
   position: relative;
-  background-position: center top;
+  .image-div {
+    background-image: url(${props => props.image});
+    border-radius: 5%;
+    background-size: cover;
+    background-position: center top;
+  }
+  .image-div, a {
+    width: 100%;
+    padding-top: 93%;
+  }
   &:hover {
     box-shadow: 0 10px 30px 2px #687480;
     transform: scale(1.1,1.1);
@@ -60,6 +66,7 @@ const Style = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
   }
   a {
     box-sizing: padding-box;
@@ -81,7 +88,12 @@ const Style = styled.div`
 
 function Projects () {
   const projectList = infoArr.map(
-    (info) => <Project image={info.image} key={info.url}><a href={info.url}><span /></a></Project>
+    (info) => (
+      <Project image={info.image} key={info.url}>
+        <a href={info.url}><span /></a>
+        <div className="image-div" />
+      </Project>
+    )
   );
  return (
    <Style>
